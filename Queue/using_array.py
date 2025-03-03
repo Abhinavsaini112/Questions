@@ -23,8 +23,7 @@ class QueueUsingArray:
     
     def size(self):
         return self.__count
-    
-        
+   
     def isEmpty(self):
         return self.size()==0
     
