@@ -3,7 +3,6 @@ class queue:
         self.q1=[]
         self.q2=[]
         self.count=0
-        self.front=0
 
     def push(self,ele):
         while len(self.q1)!=0:
@@ -29,7 +28,7 @@ class queue:
     def top(self):
         if self.count==0:
             return 'Empty stack'
-        return self.q1[self.front]
+        return self.q1[0]
 
 q=queue()
 q.push('a')
@@ -42,4 +41,3 @@ print(q.isEmpty())
 print(q.top())
 while not q.isEmpty() :
     print(q.pop())
-
