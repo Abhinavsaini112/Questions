@@ -10,8 +10,11 @@ class Stack:
 
     def push(self,data):
         newnode=Node(data)
-        newnode.next=self.head
-        self.head=newnode
+        if self.head is None:
+            self.head=newnode
+        else:
+            newnode.next=self.head
+            self.head=newnode
         self.count+=1
 
     def pop(self):

@@ -35,7 +35,7 @@ def is_balanced(string):
     return not s
     
 
-print(is_balanced("()"))          # True
+print(is_balanced("(ghju)"))          # True
 print(is_balanced("([])"))        # True
 print(is_balanced("{[()]}"))      # True
 print(is_balanced("{[(])}"))      # False
